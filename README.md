@@ -5,21 +5,21 @@ local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/Regul
 local entityTable = Spawner.createEntity({
     CustomName = "Smiler", -- Custom name of your entity
     Model = "12103641132", -- Can be GitHub file or rbxassetid
-    Speed = 160, -- Percentage, 100 = default Rush speed
-    DelayTime = 2, -- Time before starting cycles (seconds)
+    Speed = 1060, -- Percentage, 100 = default Rush speed
+    DelayTime = 20, -- Time before starting cycles (seconds)
     HeightOffset = 0,
-    CanKill = false,
-    KillRange = 50,
+    CanKill = true,
+    KillRange = 5000,
     BackwardsMovement = false,
     BreakLights = true,
     FlickerLights = {
         true, -- Enabled/Disabled
-        1, -- Time (seconds)
+        15, -- Time (seconds)
     },
     Cycles = {
-        Min = 1,
-        Max = 4,
-        WaitTime = 2,
+        Min = 10,
+        Max = 10,
+        WaitTime = 0.1,
     },
     CamShake = {
         true, -- Enabled/Disabled
